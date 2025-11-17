@@ -27,8 +27,4 @@ public class Topicos {
     public String getDescricao() {
         return descricao;
     }
-
-    public String toString() {
-        return "Titulo: " + titulo + "Descrição: " + descricao;
-    }
 }

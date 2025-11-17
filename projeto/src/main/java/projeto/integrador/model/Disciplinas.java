@@ -28,6 +28,7 @@ public class Disciplinas {
         return descricao;
     }
 
+    @Override
     public String toString() {
         return "Nome: " + nome + "Descrição: " + descricao;
     }
