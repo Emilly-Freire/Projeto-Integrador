@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    text-decoration: none !important;
+}
+
+body {
+    background-color: rgb(85, 141, 214) !important;
+}
+
+h1 {
+    font-size: 70px !important;
+}
+
+#card {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#links {
+    padding-top: 25px;
+}
