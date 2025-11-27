@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+}
+
+body {
+    background-color: rgb(213, 243, 255) !important;
+}
+
+#usuario {
+    padding-top: 100px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0052ce;
+
+}

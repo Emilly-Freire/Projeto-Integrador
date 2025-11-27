@@ -25,3 +25,12 @@ h1 {
 #links {
     padding-top: 25px;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0052ce;
+
+}
