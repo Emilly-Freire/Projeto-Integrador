@@ -2,9 +2,18 @@ package projeto.integrador.model.daos;
 
 import java.util.List;
 
-import projeto.integrador.model.Disciplinas;
+import projeto.integrador.model.Disciplina;
 
 public interface DisciplinaDAO {
-    public Disciplinas cadastrar(String nome, String descricao);
-    public List<Disciplinas> listar(int id, String nome, String descricao);
+    
+    // Crud
+    Disciplina salvar(Disciplina disciplina); 
+    
+    List<Disciplina> listarTodos();
+    
+    Disciplina buscarPorId(int id); 
+
+    boolean atualizar(Disciplina disciplina);
+
+    boolean deletar(int id);
 }
