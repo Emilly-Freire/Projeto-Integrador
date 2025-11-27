@@ -1,8 +1,6 @@
 * {
-    padding: 0;
     margin: 0;
-    text-align: center;
-    font-size: 22px;
+    padding: 0;
     text-decoration: none !important;
 }
 
@@ -11,7 +9,7 @@ body {
 }
 
 h1 {
-    font-size: 70px !important;
+    font-size: 40px !important;
 }
 
 #card {
@@ -20,8 +18,4 @@ h1 {
     padding-top: 20px;
     padding-bottom: 50px;
     border-radius: 30px;
-}
-
-#links {
-    padding-top: 25px;
 }
