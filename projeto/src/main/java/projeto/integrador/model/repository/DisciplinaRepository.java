@@ -2,28 +2,29 @@ package projeto.integrador.model.repository;
 
 import java.util.List;
 
-import projeto.integrador.model.Disciplinas;
+import projeto.integrador.model.Disciplina;
 import projeto.integrador.model.daos.DisciplinaDAO;
 
 public class DisciplinaRepository {
     
     private DisciplinaDAO dao;
 
-    public DisciplinaRepository(DisciplinaDAO dao) {
+    public DisciplinaRepository(DisciplinaDAO dao){
         this.dao = dao;
     }
 
-    public Disciplinas cadastrar(String nome, String descricao) {
-        Disciplinas disciplina = new Disciplinas(nome, descricao);
+    public Disciplina cadastrar(String nome, String descricao){
+        Disciplina disciplina = new Disciplina(nome, descricao);
         return dao.salvar(disciplina);
     }
 
-    public List<Disciplinas> listar(int id, String nome, String descricao) {
-        return dao.listar();
+    public List<Disciplina> listar(){
+        return dao.listarTodos();
     }
 
-    public List<Disciplinas> getListar() {
+    public List<Disciplina> getListar(){
         return null;
     }
+
     
 }
