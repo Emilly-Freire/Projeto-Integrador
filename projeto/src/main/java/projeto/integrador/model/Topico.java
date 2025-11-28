@@ -46,4 +46,9 @@ public class Topico {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    @Override
+    public String toString() {
+        return "Título: " + titulo + " | Descrição: " + descricao;
+    }
 }

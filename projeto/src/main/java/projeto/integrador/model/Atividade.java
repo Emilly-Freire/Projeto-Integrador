@@ -31,16 +31,41 @@ public class Atividade {
     }
 
     // --- Getters ---
-    public int getId() { return id; }
-    public int getIdDisciplinaTopicos() { return idDisciplinaTopicos; }
-    public String getDescricao() { return descricao; }
-    public int getStatus() { return status; }
-    public LocalDate getDataEntrega() { return dataEntrega; }
+    public int getId() { 
+        return id; 
+    }
+    public int getIdDisciplinaTopicos() { 
+        return idDisciplinaTopicos; 
+    }
+    public String getDescricao() { 
+        return descricao; 
+    }
+    public int getStatus() { 
+        return status; 
+    }
+    public LocalDate getDataEntrega() { 
+        return dataEntrega; 
+    }
 
     // --- Setters ---
-    public void setId(int id) { this.id = id; }
-    public void setIdDisciplinaTopicos(int idDisciplinaTopicos) { this.idDisciplinaTopicos = idDisciplinaTopicos; }
-    public void setDescricao(String descricao) { this.descricao = descricao; }
-    public void setStatus(int status) { this.status = status; }
-    public void setDataEntrega(LocalDate dataEntrega) { this.dataEntrega = dataEntrega; }
+    public void setId(int id) { 
+        this.id = id; 
+    }
+    public void setIdDisciplinaTopicos(int idDisciplinaTopicos) { 
+        this.idDisciplinaTopicos = idDisciplinaTopicos; 
+    }
+    public void setDescricao(String descricao) { 
+        this.descricao = descricao; 
+    }
+    public void setStatus(int status) { 
+        this.status = status; 
+    }
+    public void setDataEntrega(LocalDate dataEntrega) { 
+        this.dataEntrega = dataEntrega; 
+    }
+
+    @Override
+    public String toString() {
+        return "Descrição: " + descricao + " | Data de Entrega: " + dataEntrega + " | Status: " + (status == 0 ? "Pendente" : "Concluída");
+    }
 }
